@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>tejas_sir_ISM-2023</display-name>
+  <welcome-file-list>
+  
+    <welcome-file>SignUp.html</welcome-file>
+    <welcome-file>AddCalc.html</welcome-file>
+	<welcome-file>Calculator.html</welcome-file>    
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>SignUpController</servlet-name>
+  	<servlet-class>com.google.controller.SignUpController</servlet-class> 	
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SignUpController</servlet-name>
+  	<url-pattern>/SignUpController</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>AddCalc</servlet-name>
+ <servlet-class>com.google.controller.AddCalc</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>AddCalc</servlet-name>
+ <url-pattern>/AddCalc</url-pattern>
+ </servlet-mapping>
+ 
+  
+ <servlet>
+ <servlet-name>Calculator</servlet-name>
+ <servlet-class>com.google.controller.Calculator</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>Calculator</servlet-name>
+ <url-pattern>/Calculator</url-pattern>
+ </servlet-mapping>
+  
+</web-app>
